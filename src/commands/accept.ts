@@ -4,7 +4,7 @@ export default {
 	name: "accept",
 	run: async (msg: Message, args: string[]) => {
 		if (!msg.member?.roles.cache.has("756615437243908267") && !msg.member?.roles.cache.has("769870496653115427"))
-			return await msg.channel.send("You do not have the requried role to use this");
+			return await msg.channel.send("You do not have the required role to use this");
 
 		const target = msg.mentions.users.first() || msg.client.users.cache.get(args[0]);
 		if (!target)
