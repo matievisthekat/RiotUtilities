@@ -2,7 +2,7 @@ module.exports = {
 	apps: [
 		{
       name: "riot-bot",
-			script: "./dist/index.js",
+			script: "npm start",
 			watch: "./dist",
 		},
 	],
