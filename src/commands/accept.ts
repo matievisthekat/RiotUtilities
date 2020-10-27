@@ -13,7 +13,7 @@ export default {
 		const embed = new MessageEmbed()
 			.setTitle("Your application was accepted in Riot's Emoji Server")
 			.setColor("GREEN")
-			.setDescription(`\`Note\`: ${args.slice(1).join(" ") || "(No note given)"}`);
+			.setDescription(`\`Moderator Note\`: ${args.slice(1).join(" ") || "(No Moderator Note given)"}`);
 
 		target
 			.send(embed)
