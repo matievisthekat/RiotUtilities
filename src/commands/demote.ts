@@ -3,7 +3,7 @@ import { Message, MessageEmbed } from "discord.js";
 export default {
 	name: "demote",
 	run: async (msg: Message, args: string[]) => {
-		if (!msg.member?.roles.cache.has("756615437243908267") && !msg.member?.roles.cache.has("769870496653115427"))
+		if (!msg.member?.roles.cache.has("752254089114681476") && !msg.member?.roles.cache.has("769870496685752320"))
 			return await msg.channel.send("You do not have the required role to use this");
 
 		const target = msg.mentions.users.first() || msg.client.users.cache.get(args[0]);
