@@ -17,7 +17,7 @@ export default {
 		const embed = new MessageEmbed()
 			.setTitle("You were promoted in the Staff Team from Riot's Emoji Server")
 			.setColor("GREEN")
-			.setDescription(`\`Role\`: ${role}\n\`Moderator Note:\`: ${args.slice(2).join(" ") || "(No reason given)"}`);
+			.setDescription(`\`Role\`: ${role.name}\n\`Moderator Note\`: ${args.slice(2).join(" ") || "(No reason given)"}`);
 
 		target
 			.send(embed)
