@@ -1,7 +1,7 @@
 import { Message, MessageEmbed } from "discord.js";
 
 export default {
-	name: "deny",
+	name: "message",
 	run: async (msg: Message, args: string[]) => {
 		if (!msg.member?.roles.cache.has("752254084999807247") && !msg.member?.roles.cache.has("769870496685752321"))
 			return await msg.channel.send("You do not have the required role to use this");
