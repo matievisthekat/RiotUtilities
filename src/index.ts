@@ -7,7 +7,14 @@ const prefix = "res!";
 const token = "NzY5ODQ1OTg0ODQ2MjgyNzYz.X5U88Q.Xwog4dPsibvykCa8O1bY10U1dVM";
 // <---------- Change these values (between the quotes) ---------->
 
-const client = new Client();
+const client = new Client({
+	presence: {
+		activity: {
+			name: "RES Chat",
+			type: "WATCHING",
+		},
+	},
+});
 const commands = new Collection<string, Command>();
 
 client.on("ready", () => console.log(`Logged in as ${client.user?.tag}`));
