@@ -4,7 +4,7 @@ import { join } from "path";
 
 // <---------- Change these values (between the quotes) ---------->
 const prefix = "res!";
-const token = "NzY5ODQ1OTg0ODQ2MjgyNzYz.X5U88Q.Xwog4dPsibvykCa8O1bY10U1dVM";
+const token = "fuck you";
 // <---------- Change these values (between the quotes) ---------->
 
 const client = new Client({
